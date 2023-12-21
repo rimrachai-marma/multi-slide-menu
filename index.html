@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dynamic Multi Slide Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav id="nav">
+          <button class="btn-open-menu" data-btn-open-menu>
+            <span>&nbsp;</span>
+          </button>
+
+          <dialog id="modal-menu" data-menu>
+            <div class="header">
+              <a href="#">
+                <div class="profile">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                  >
+                    <path
+                      d="M14 0c7.734 0 14 6.266 14 14 0 7.688-6.234 14-14 14-7.75 0-14-6.297-14-14 0-7.734 6.266-14 14-14zM23.672 21.109c1.453-2 2.328-4.453 2.328-7.109 0-6.609-5.391-12-12-12s-12 5.391-12 12c0 2.656 0.875 5.109 2.328 7.109 0.562-2.797 1.922-5.109 4.781-5.109 1.266 1.234 2.984 2 4.891 2s3.625-0.766 4.891-2c2.859 0 4.219 2.312 4.781 5.109zM20 11c0-3.313-2.688-6-6-6s-6 2.688-6 6 2.688 6 6 6 6-2.688 6-6z"
+                    ></path>
+                  </svg>
+                  <!-- <img
+                  src="https://avatars.githubusercontent.com/u/60957299?v=4"
+                  alt="avatar"
+                /> -->
+                </div>
+                <div class="info">
+                  <h3>Rimrachai Marma</h3>
+                  <span>rimrachai.marma@gmail.com</span>
+                </div>
+              </a>
+            </div>
+            <div data-menu id="main-menu">
+              <ul class="menu-list">
+                <li>
+                  <div class="menu-item-wrapper"><a href="#">Home</a></div>
+                </li>
+
+                <li>
+                  <div class="menu-item-wrapper">
+                    <a href="#">Services</a>
+                    <button data-btn-menu-trigger>
+                      <svg
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <ul class="sub-menu">
+                    <div class="menu-orgin">
+                      <button data-btn-menu-back>
+                        <svg
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>back</title>
+                          <path
+                            d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+                          ></path>
+                        </svg>
+                      </button>
+                      <span>Services</span>
+                    </div>
+
+                    <li>
+                      <div class="menu-item-wrapper">
+                        <a href="#">Web Design</a>
+                        <button data-btn-menu-trigger>
+                          <svg
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <ul class="sub-menu">
+                        <div class="menu-orgin">
+                          <button data-btn-menu-back>
+                            <svg
+                              version="1.1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <title>back</title>
+                              <path
+                                d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+                              ></path>
+                            </svg>
+                          </button>
+                          <span>Web Design</span>
+                        </div>
+
+                        <li>
+                          <div class="menu-item-wrapper">
+                            <a href="#">Photoshop</a>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="menu-item-wrapper">
+                            <a href="#">Illustrator</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="menu-item-wrapper">
+                        <a href="#">Web Development</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu-item-wrapper">
+                        <a href="#">SEO</a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="menu-item-wrapper">
+                    <a href="#">Product</a>
+                    <button data-btn-menu-trigger>
+                      <svg
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6c0.391-0.391 0.391-1.024 0-1.414l-6-6c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <ul class="sub-menu">
+                    <div class="menu-orgin">
+                      <button data-btn-menu-back>
+                        <svg
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <title>back</title>
+                          <path
+                            d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+                          ></path>
+                        </svg>
+                      </button>
+                      <span>Product</span>
+                    </div>
+
+                    <li>
+                      <div class="menu-item-wrapper">
+                        <a href="#">Product 1</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu-item-wrapper">
+                        <a href="#">Product 2</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="menu-item-wrapper">
+                        <a href="#">Product 3</a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="menu-item-wrapper"><a href="#">About</a></div>
+                </li>
+                <li>
+                  <div class="menu-item-wrapper"><a href="#">Contact</a></div>
+                </li>
+              </ul>
+            </div>
+          </dialog>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Home page</h1>
+    </main>
+  </body>
+</html>
